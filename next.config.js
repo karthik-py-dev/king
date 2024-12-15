@@ -1,14 +1,9 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: ["localhost"],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "cdn.sanity.io",
-        port: "",
-      },
-    ],
+  reactStrictMode: true,
+  experimental: {
+    appDir: true,  // Ensure this is enabled if you're using the app directory
   },
 };
 
